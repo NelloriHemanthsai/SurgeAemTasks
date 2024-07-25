@@ -1,0 +1,143 @@
+
+                              AEM TASKS 
+
+
+Task-1
+  1- Create a component Named Header with Path field, text field, multifield (text field & Date  picker) and checkbox.
+ 2- Render the authored field via sling model on page using HTL
+
+
+
+Task-2
+  1- Create a component named Carousel with nested multifield-> multifield (text, path, multifield (text))
+  2- Render the authored field via sling model on page using HTL
+
+
+Task-3
+
+1- Create a component named sidebar.
+2- It should contain multiple tabs.
+Tab-1: Name- Header
+Fields:
+Logo Path - Path Field
+Logo Mobile Image - Path Field
+Logo Link - Path Field
+Enable Switch - Checkbox
+Tab-2: Name- Header Links
+Fields: - Multifield
+Name - Text Field
+Image - Path Field
+Tab-3: Name- SideBar Navigation
+Fields: - Multifield
+Desktop Icon - Path Field
+Mobile Icon - Path Field
+Nested Multifield
+Navigation URL - Path field
+Tab-4: Name- Region
+Fields: -
+Country - Dropdown - options (india & US)
+
+Write sling model for above component and render the values on page using HTL
+Note: For Multifield keep composite as true propertie
+
+
+
+
+Task-4
+
+1- Create an experience fragment and place the created sidebar component in it and author
+2- Create a template and place the experience fragment in created template, then using the template create the page
+
+The created page should contain the experience fragment in it with authored values
+
+
+
+Task-5
+	
+1- Create a path based servlet
+2- when the user hits the path with parameter "session", then read that and create the random 6 letter word and return it .
+
+
+
+Task-6
+
+1- Create a component named "Single Article" and keep two field
+     i) Enable PII (Checkbox)
+    ii) Css Class (Text field)
+
+2-   If you enable the checkbox then the Css class text field should be enable inside the                            component dialog   and if you disabled the   checkbox then field should be disabled user
+  should not be able to enter text in it.
+
+3- Create the div element and for the div element the css class name should appear if value is entered.
+
+
+
+
+Task-7
+
+1-	Write an event handler that triggers upon the publication of any page in AEM, logging the path of the published page.
+2-	At the Same time when the page is published Servlet has been triggered and showing the logging message.
+
+
+
+
+Task-8
+When you publish any page in AEM, the event handler should trigger, logging the path of the published page  and adding the property (changed  Boolean  true) to that path.
+
+Task-9
+When you publish the page? And it will trigger the event handler and display the logs, after which you should trigger the workflow. then start the workflow automatically.
+Create a workflow that includes both a process and a participant step.
+Description:
+When a user publishes a page, the administrator should receive an email notification.
+
+Task-10
+1.	Create a scheduler with a cron expression that should execute after the specified time.
+2.	Continuation: If a path is provided, all the child pages under that path should be published automatically according to the cron expression.
+
+Task-11
+   When you create any page in the project, you should trigger the event handler. After that, you    should trigger the workflow, and it should add the Expirydate property to that page's   jcr:content, with the value being the current date and time.
+
+Task-12
+1.	When you create any page in the project, you should trigger the event listener. After that, you should trigger the workflow, and it should add the Expirydate property to that page's jcr:content, with the value being the current date and time.
+2.	Continution: And when you create any page in another project, it should add the Expirydate property to that page's jcr:content, with the value being the previous date and time.
+
+Task-13
+1.	Create a scheduler. When I provide any cron expression for 3 minutes, after 3 minutes, whatever page has the Expirydate property with the current date and time should be published, and those with previous dates and times should be unpublished.
+
+
+Task-14
+
+Perform CRUD Operation -:
+
+1) Create Operation -:
+   i)On submission of your form, write onClick() function
+   ii) Inside function make ajax call and provide data of each field and url.
+  iii)With ajax url register servlet with path and make call to your servlet.
+  iv)Override doGet() method and save form data to path into your Crx/de.
+
+2) Read Operation -:
+  i)Fetch all data from path provided using query in form data table component sling 
+   model.
+
+Form Data Table Component -:
+ 
+
+
+3)	If user click on the edit button it should take to the contact us component and the user can   edit their field
+
+4)If the user click on delete it should select particular row and it should delete that respective node in crx/de.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
